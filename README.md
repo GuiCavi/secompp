@@ -12,22 +12,22 @@ Os testes podem ser feitos no simulator (para iOS, somente no Mac)/emulator (par
 
 ## Instalando as ferramentas
 
-> ## OBS: As instalações podem requisitar permissões de administrador, então caso algum comando dê erro, tente novamente com permissões de administrador.
+> OBS: As instalações podem requisitar permissões de administrador, então caso algum comando dê erro, tente novamente com permissões de administrador.
 
-1. Instalar NodeJS - de preferência a versão LTS
+### 1. Instalar NodeJS - de preferência a versão LTS
 
 [LINK PARA PÁGINA DO NODE](https://nodejs.org/en/)
 
 ![Imgur](https://i.imgur.com/Mm1zEsn.png)
 
-2. Executar a instalação do CRNA com o comando
+### 2. Executar a instalação do CRNA com o comando
 ```shell
 $ npm i -g create-react-native-app
 ```
 
 ![Imgur](https://i.imgur.com/WNpXqBx.png)
 
-3. Criar um projeto teste com o comando 
+### 3. Criar um projeto teste com o comando 
 ```shell
 $ create-react-native-app NomeDoProjeto
 ```
@@ -35,16 +35,17 @@ Com isso, vai solicitar para instalar o Expo CLI globalmente, basta aceitar. Ess
 
 ![Imgur](https://i.imgur.com/DOfMacm.png)
 
-4. Depois que a instalação do Expo CLI foi concluída (pode levar algum tempo dependendo da conexão com a internet), será pedido para escolher o template do projeto. Escolha qualquer um.
+### 4. Depois que a instalação do Expo CLI foi concluída (pode levar algum tempo dependendo da conexão com a internet), será pedido para escolher o template do projeto. Escolha qualquer um.
 
 ![Imgur](https://i.imgur.com/7TNd8pq.png)
 
-5. Em caso de sucesso, você verá uma mensagem "Your project is ready".
-> Em caso de erro de timeout, basta executar novamente o comando do passo 3.
+### 5. Em caso de sucesso, você verá uma mensagem "Your project is ready".
 
 ![Imgur](https://i.imgur.com/BxdMXNy.png)
 
-6. Para testar se tudo ocorreu como esperado, basta digitar os comandos
+> Em caso de erro de timeout, basta executar novamente o comando do passo 3.
+
+### 6. Para testar se tudo ocorreu como esperado, basta digitar os comandos
 ```shell  
   $ cd NomeDoProjeto
   $ expo start
@@ -61,7 +62,8 @@ Abrirá uma página como essa:
 
 ![Imgur](https://i.imgur.com/exQEY1H.png)
 
-7. Abra o aplicativo no dispositvo e tente ler o QR Code.
-> Caso haja erro, selecione a opção "Run on Android device/emulator" (Android) ou "Run on iOS simulator" na aba do packager.
+### 7. Abra o aplicativo no dispositvo e tente ler o QR Code.
 
 ![Imgur](https://i.imgur.com/rOvNrQX.png)
+
+> Caso haja erro, selecione a opção "Run on Android device/emulator" (Android) ou "Run on iOS simulator" na aba do packager.
