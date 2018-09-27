@@ -1,8 +1,10 @@
 # Tutorial de instalação das ferramentas para o minicurso de React Native
 
-## Instalar o aplicativo para fazer o desenvolvimento
+## Instalar o aplicativo para fazer os testes do desenvolvimento
 
-Os testes podem ser feitos no simulator (para iOS, somente no Mac)/emulator (para Android, qualquer computador), ou em um dispositivo. Para testes no dispositivo, instalar o aplicativo do Expo
+Os testes podem ser feitos no simulator (para iOS, somente no Mac)/emulator (para Android, qualquer computador), ou em um dispositivo físico. 
+
+Para testes em dispositivos físicos, é preciso instalar o aplicativo do Expo pela store do SO.
 
 [Link para AppStore (iOS)](https://itunes.apple.com/app/apple-store/id982107779)
 
@@ -62,7 +64,8 @@ Abrirá uma página como essa:
 
 ![Imgur](https://i.imgur.com/exQEY1H.png)
 
-### 7. Abra o aplicativo no dispositvo e tente ler o QR Code.
+### 7. Abra o aplicativo no dispositvo e tente ler o QR Code. 
+OBS: No Android, o QR Code a partir do app Expo. No iPhone, é necessário abrir a camera para ler o QR Code.
 
 ![Imgur](https://i.imgur.com/rOvNrQX.png)
 
