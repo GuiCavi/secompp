@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Button } from 'react-native';
+
+import {
+  LinearIcon,
+} from '../components';
 
 class LoginScreen extends Component {
   constructor(props) {
@@ -12,6 +16,8 @@ class LoginScreen extends Component {
     return (
       <View>
         <Text style={{ fontFamily: 'avenir-black' }}>LoginScreen</Text>
+        <LinearIcon name='home' />
+        <Button title="Login" onPress={() => this.props.navigation.navigate('DashboardTabs')} />
       </View>
     );
   }
