@@ -1,20 +1,9 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-    };
-  }
+import Router from './src/Router';
 
+export default class App extends Component {
   render() {
-    return (
-      <View>
-        <Text> App js </Text>
-      </View>
-    );
+    return <Router />;
   }
-}
-
-export default App;
+};
