@@ -16,7 +16,6 @@ class LoginScreen extends Component {
     return (
       <View>
         <Text style={{ fontFamily: 'avenir-black' }}>LoginScreen</Text>
-        <LinearIcon name='home' />
         <Button title="Login" onPress={() => this.props.navigation.navigate('DashboardTabs')} />
       </View>
     );

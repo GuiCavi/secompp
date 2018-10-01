@@ -95,10 +95,10 @@ export default createStackNavigator({
     DashboardTabs
   }, {
     navigationOptions: () => ({
-      headerRight: <LinearIcon name="earth" />
+      // headerRight: <LinearIcon name="earth" />
     }),
   }),
 }, {
-  initialRouteName: 'App',
+  // initialRouteName: 'App',
   headerMode: 'none',
 })
