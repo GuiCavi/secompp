@@ -1,10 +1,12 @@
-import React, { Component, Fragment } from 'react';
-import { View, ImageBackground, TextInput, TouchableHighlight, TouchableNativeFeedback, Platform, KeyboardAvoidingView } from 'react-native';
+import React, { Component } from 'react';
+import { View, ImageBackground, KeyboardAvoidingView } from 'react-native';
 import { SafeAreaView } from 'react-navigation';
 
 import {
   Logo,
   Text,
+  Button,
+  CustomInput,
 } from '../components';
 
 import Colors from '../theme/colors';
@@ -63,7 +65,7 @@ class LoginScreen extends Component {
                 secureTextEntry
               />
 
-              <Button onPress={() => this.props.navigation.navigate('DashboardTabs')}>
+              <Button style={{ marginVertical: 8 }} onPress={() => this.props.navigation.navigate('DashboardTabs')}>
                 <Text color="white" size={18} style={{ ...Colors.shadows.whiteText }}>ENTRAR</Text>
               </Button>
 
@@ -75,85 +77,6 @@ class LoginScreen extends Component {
         </SafeAreaView>
       </ImageBackground>
     );
-  }
-}
-
-class CustomInput extends Component {
-  render() {
-    const {
-      labelStyle,
-      label,
-      ...inputProps,
-    } = this.props;
-
-    const {
-      fontWeight,
-      fontStyle,
-      fontSize,
-      ...rest,
-    } = labelStyle;
-
-    return (
-      <View style={{ marginVertical: 8 }}>
-        <Text color={Colors.theme.primaryColor} fontWeight={fontWeight} fontStyle={fontStyle} size={fontSize} style={[{ ...Colors.shadows.whiteText }, rest]}>{label}</Text>
-        <TextInput
-          {...inputProps}
-          value={this.props.value}
-          onChangeText={this.props.onChangeText}
-          placeholderTextColor="grey"
-          underlineColorAndroid="transparent"
-          selectionColor="rgba(255,255,255,0.33)"
-          
-          style={{
-            marginTop: 5,
-            borderColor: Colors.theme.primaryColor,
-            borderWidth: 1,
-            borderRadius: 5,
-            paddingHorizontal: 16,
-            paddingVertical: 16,
-            fontSize: 22,
-            color: 'white',
-          }}
-        />
-      </View>
-    )
-  }
-}
-
-class Button extends Component {
-  render() {
-    let Touchable = null;
-    let props = {
-      ...this.props,
-    };
-    
-    if (Platform.OS === 'ios') {
-      Touchable = TouchableHighlight;
-      props.underlayColor = 'black';
-    }
-    else {
-      Touchable = TouchableNativeFeedback;
-      props.background = TouchableNativeFeedback.Ripple('white');
-    }
-
-    return (
-      <Touchable {...props} style={{ borderRadius: 5, marginVertical: 8 }}>
-        <View
-          style={[
-            {
-              paddingVertical: 16,
-              alignItems: "center",
-              backgroundColor: Colors.theme.primaryColor,
-              borderRadius: 5,
-              marginVertical: Platform.OS === 'android' ? 8 : 0,
-            },
-            this.props.style
-          ]}
-        >
-          {this.props.children}
-        </View>
-      </Touchable>
-    )
   }
 }
 
