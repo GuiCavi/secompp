@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image } from 'react-native';
 
-const Logo = ({ color }) => {
+const Logo = ({ color, style }) => {
   let image;
 
   switch (color) {
@@ -15,11 +15,11 @@ const Logo = ({ color }) => {
       break;
   }
 
-  return (<Image source={image} style={{ width: 110, height: 22 }} />);
+  return (<Image source={image} style={[{ width: 110, height: 22 }, style]} />);
 }
 
 Logo.defaultProps = {
-  color: 'black'
+  color: 'black',
 };
 
 export default Logo;
