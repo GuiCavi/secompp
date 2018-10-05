@@ -17,7 +17,7 @@ export default class App extends Component {
       'avenir-book-oblique': require('./assets/fonts/Avenir/Avenir-BookOblique.ttf'),
 
       'avenir-roman': require('./assets/fonts/Avenir/Avenir-Roman.ttf'),
-      'avenir-oblique': require('./assets/fonts/Avenir/Avenir-Oblique.ttf'),
+      'avenir-roman-oblique': require('./assets/fonts/Avenir/Avenir-Oblique.ttf'),
 
       'avenir-medium': require('./assets/fonts/Avenir/Avenir-Medium.ttf'),
       'avenir-medium-oblique': require('./assets/fonts/Avenir/Avenir-MediumOblique.ttf'),
