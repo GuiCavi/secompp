@@ -79,7 +79,7 @@ const DashboardTabsRoutes = {
 const DashboardTabsConfig = {
   shifting: true,
   activeColor: 'black',
-  inactiveColor: 'lightgrey'
+  inactiveColor: 'lightgrey',
 };
 
 const DashboardTabs = createMaterialBottomTabNavigator(DashboardTabsRoutes, DashboardTabsConfig);
@@ -94,8 +94,13 @@ export default createStackNavigator({
   App: createStackNavigator({
     DashboardTabs
   }, {
+    headerLayoutPreset: 'center',
     navigationOptions: () => ({
       // headerRight: <LinearIcon name="earth" />
+      headerStyle: {
+        borderBottomColor: 'transparent',
+        elevation: 0,
+      }
     }),
   }),
 }, {
